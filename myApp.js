@@ -1,7 +1,9 @@
 
 require('dotenv').config()
 let express = require('express');
+const { redirect } = require('express/lib/response');
 let app = express();
+
 
 app.use((req,res,next) => {
     
@@ -52,7 +54,14 @@ app.get('/:word/echo/',(req,res)=>{
 
 
 
+app.get('/name', (req,res) =>{
+    
+    let first = req.query.first 
+    let last = req.query.last
+     
 
+    res.json({"name":`${first} ${last}`})
+})
 
 
 
