@@ -12,7 +12,7 @@ app.use((req,res,next) => {
 
     next();
 })
-// console.log('Hello World');//
+
 
 
 /*app.get("/", function(req,res){
@@ -43,6 +43,11 @@ app.get('/now', (req,res,next)=>{
 },
 (req,res)=>{ 
     res.json({time:req.time})
+})
+
+app.get('/:word/echo/',(req,res)=>{
+    let word = req.params.word;
+    res.json({"echo":word});
 })
 
 
