@@ -1,5 +1,9 @@
 {
+	
 	"name": "fcc-learn-node-with-express",
+	"author":"Vinicius Ribas",
+	"description":"A project that does something awesome",
+	"keywords": [ "descriptive", "related", "words", "freecodecamp" ],
 	"version": "0.1.0",
 	"dependencies": {
 		"body": "^5.1.0",
